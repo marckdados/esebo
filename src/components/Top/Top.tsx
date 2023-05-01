@@ -1,7 +1,6 @@
-import { Container } from './style';
+import * as S from './style';
+import PropsModal from '../../interfaces/modalInterface';
 import icon from '../../assets/images/ESebo.png';
-import { Topics } from './style';
-import PropsModal from '../../interface/modalInterface';
 
 export default function Top({ setModal, setTypeForm }: PropsModal) {
   function showModal(): void {
@@ -17,9 +16,9 @@ export default function Top({ setModal, setTypeForm }: PropsModal) {
   }
 
   return (
-    <Container>
+    <S.Container>
       <img src={icon} alt="Icon" />
-      <Topics>
+      <S.Topics>
         <span
           onClick={() => {
             showModal();
@@ -36,7 +35,7 @@ export default function Top({ setModal, setTypeForm }: PropsModal) {
         >
           Entrar
         </span>
-      </Topics>
-    </Container>
+      </S.Topics>
+    </S.Container>
   );
 }

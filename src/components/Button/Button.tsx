@@ -1,4 +1,4 @@
-import { ButtonProps } from '../../interfaces/buttonInterface';
+import ButtonProps from '../../interfaces/buttonInterface';
 import * as S from './style';
 
 const Button: React.FC<ButtonProps> = (props) => {
